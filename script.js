@@ -1,6 +1,49 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // =========================================
+    // 0. LOGICA CAMBIO LINGUA (i18n)
+    // =========================================
+    let currentLanguage = localStorage.getItem('language') || 'it';
+
+    function setLanguage(lang) {
+        currentLanguage = lang;
+        localStorage.setItem('language', lang);
+
+        // Aggiorna attributi e valori di tutti gli elementi con data-i18n
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+                const text = translations[lang][key];
+                
+                // Controlla se è un elemento con innerHTML (come h1, h2) o textContent
+                if (element.tagName === 'H1' || element.tagName === 'H2' || element.tagName === 'H3' || element.tagName === 'P' || element.tagName === 'STRONG') {
+                    element.innerHTML = text;
+                } else {
+                    element.textContent = text;
+                }
+            }
+        });
+
+        // Aggiorna il badge della lingua
+        document.getElementById('lang-toggle').innerHTML = `<span class="lang-badge">${lang.toUpperCase()}</span>`;
+
+        // Aggiorna l'attributo lang dell'HTML
+        document.documentElement.lang = lang;
+    }
+
+    // Toggle della lingua
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            const newLang = currentLanguage === 'it' ? 'en' : 'it';
+            setLanguage(newLang);
+        });
+    }
+
+    // Inizializza la lingua al caricamento della pagina
+    setLanguage(currentLanguage);
+
+    // =========================================
     // 1. LOGICA NAVBAR RESPONSIVE
     // =========================================
     const navToggle = document.querySelector('.nav-toggle');

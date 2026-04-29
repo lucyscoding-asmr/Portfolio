@@ -20,6 +20,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+    <script src="translations.js"></script>
 
     <!-- ==================== SCHEMA.ORG JSON-LD ==================== -->
     <script type="application/ld+json">
@@ -63,12 +64,15 @@
             </button>
             <div class="nav-menu" id="primary-navigation">
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#approccio">Approccio</a></li>
-                    <li><a href="#progetti">Progetti</a></li>
-                    <li><a href="#competenze">Competenze</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#hero" data-i18n="home">Home</a></li>
+                    <li><a href="#approccio" data-i18n="approccio">Approccio</a></li>
+                    <li><a href="#progetti" data-i18n="progetti">Progetti</a></li>
+                    <li><a href="#competenze" data-i18n="competenze">Competenze</a></li>
+                    <li><a href="#faq" data-i18n="faq">FAQ</a></li>
                 </ul>
+                <button class="language-toggle" id="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-badge">IT</span>
+                </button>
             </div>
         </nav>
     </header>
@@ -78,44 +82,44 @@
         <section id="hero" class="container">
             <canvas id="hero-canvas"></canvas>
             <div class="hero-text">
-                <p
+                <p data-i18n="location"
                     style="color: var(--accent-color); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem;">
                     Full-Stack Developer · Modena, Italia</p>
-                <h1>Ciao, sono Lucia<br>Sviluppatrice Full-Stack neolaureata.</h1>
-                <p>Creo <strong>web app moderne</strong> e <strong>siti web strategici</strong> con React, TypeScript, Node.js e Firebase.
+                <h1 data-i18n="heroTitle">Ciao, sono Lucia<br>Sviluppatrice Full-Stack neolaureata.</h1>
+                <p data-i18n="heroDesc">Creo <strong>web app moderne</strong> e <strong>siti web strategici</strong> con React, TypeScript, Node.js e Firebase.
                     <br><br>Qui troverai i miei progetti personali, le competenze tecniche e come posso contribuire al tuo team.</p>
-                <a href="#progetti" class="btn btn-primary">Esplora i Miei Progetti</a>
+                <a href="#progetti" class="btn btn-primary" data-i18n="explorProjects">Esplora i Miei Progetti</a>
             </div>
         </section>
 
         <section id="approccio" class="container">
-            <h2>Il Mio <span style="color: var(--accent-color);">Approccio</span></h2>
-            <p class="method-intro">
+            <h2 data-i18n="myApproach">Il Mio <span style="color: var(--accent-color);">Approccio</span></h2>
+            <p class="method-intro" data-i18n="approachIntro">
                 Non creo solo "codice". Sviluppo soluzioni pensate per essere mantenibili, scalabili e orientate alla qualità.
                 Ecco i pilastri del mio lavoro.
             </p>
             <div class="method-grid">
                 <div class="method-card">
                     <i class="fa-solid fa-code"></i>
-                    <h4>Codice Pulito</h4>
-                    <p>Scrivo codice leggibile, testabile e facile da mantenere. Seguo best practice moderne e convenzioni di settore.</p>
+                    <h4 data-i18n="cleanCode">Codice Pulito</h4>
+                    <p data-i18n="cleanCodeDesc">Scrivo codice leggibile, testabile e facile da mantenere. Seguo best practice moderne e convenzioni di settore.</p>
                 </div>
                 <div class="method-card">
                     <i class="fa-solid fa-mobile"></i>
-                    <h4>User-First Design</h4>
-                    <p>Sviluppo interfacce responsabili e intuitive, pensate per offrire la migliore esperienza su tutti i dispositivi.</p>
+                    <h4 data-i18n="userFirst">User-First Design</h4>
+                    <p data-i18n="userFirstDesc">Sviluppo interfacce responsabili e intuitive, pensate per offrire la migliore esperienza su tutti i dispositivi.</p>
                 </div>
                 <div class="method-card">
                     <i class="fa-solid fa-bolt"></i>
-                    <h4>Performance & Affidabilità</h4>
-                    <p>Ottimizziamo le applicazioni per velocità, SEO e robustezza. Perché il codice deve funzionare sempre, ovunque.</p>
+                    <h4 data-i18n="performance">Performance & Affidabilità</h4>
+                    <p data-i18n="performanceDesc">Ottimizziamo le applicazioni per velocità, SEO e robustezza. Perché il codice deve funzionare sempre, ovunque.</p>
                 </div>
             </div>
         </section>
 
         <section id="progetti" class="container">
-            <h2>I Miei Progetti</h2>
-            <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;">
+            <h2 data-i18n="myProjects">I Miei Progetti</h2>
+            <p class="section-subtitle" data-i18n="projectsSubtitle" style="text-align: center; margin-bottom: 2rem;">
                 Progetti personali sviluppati end-to-end, dalla progettazione al deployment.
             </p>
 
@@ -136,16 +140,16 @@
                         <button class="slider-btn next">&#10095;</button>
                     </div>
                     <div class="project-card-content">
-                        <h3>Ferrari Sustainability Hub</h3>
+                        <h3 data-i18n="ferrariHub">Ferrari Sustainability Hub</h3>
                         <div class="project-tags">
                             <span class="tag">HTML5</span>
                             <span class="tag">CSS3</span>
                             <span class="tag">GitHub Pages</span>
-                            <span class="tag">Progetto di Tesi</span>
+                            <span class="tag" data-i18n="thesis">Progetto di Tesi</span>
                         </div>
-                        <p>Piattaforma web per la consultazione e il download dei report ufficiali di sostenibilità di Ferrari. Progetto realizzato come tesi di laurea con focus su accessibilità e user experience.</p>
+                        <p data-i18n="ferrariDesc">Piattaforma web per la consultazione e il download dei report ufficiali di sostenibilità di Ferrari. Progetto realizzato come tesi di laurea con focus su accessibilità e user experience.</p>
                         <a href="https://lu13cy.github.io/ProjectWork" target="_blank"
-                            rel="noopener noreferrer" class="project-btn">Visita il Sito</a>
+                            rel="noopener noreferrer" class="project-btn" data-i18n="visitSite">Visita il Sito</a>
                     </div>
                 </div>
 
@@ -157,7 +161,7 @@
                         </div>
                     </div>
                     <div class="project-card-content">
-                        <h3>Fitness Studio Manager</h3>
+                        <h3 data-i18n="fitnessManager">Fitness Studio Manager</h3>
                         <div class="project-tags">
                             <span class="tag">React 19</span>
                             <span class="tag">React Router</span>
@@ -165,9 +169,9 @@
                             <span class="tag">Tailwind CSS</span>
                             <span class="tag">Vite</span>
                         </div>
-                        <p>Web app full-stack per la gestione di una palestra: dashboard amministrativa, costruttore di schede di allenamento con layout di stampa e gestione completa dei clienti.</p>
+                        <p data-i18n="fitnessDesc">Web app full-stack per la gestione di una palestra: dashboard amministrativa, costruttore di schede di allenamento con layout di stampa e gestione completa dei clienti.</p>
                         <a href="https://fitnessstudiomanager.netlify.app" target="_blank"
-                            rel="noopener noreferrer" class="project-btn">Visita la Web App</a>
+                            rel="noopener noreferrer" class="project-btn" data-i18n="visitWebApp">Visita la Web App</a>
                     </div>
                 </div>
 
@@ -198,7 +202,7 @@
                         <button class="slider-btn next">&#10095;</button>
                     </div>
                     <div class="project-card-content">
-                        <h3>My Personal Gym</h3>
+                        <h3 data-i18n="myPersonalGym">My Personal Gym</h3>
                         <div class="project-tags">
                             <span class="tag">React 18</span>
                             <span class="tag">TypeScript</span>
@@ -207,10 +211,10 @@
                             <span class="tag">Firebase</span>
                             <span class="tag">PWA</span>
                         </div>
-                        <p>Web app pensata per l'uso diretto in palestra. Gestione clienti, monitoraggio progressi e
+                        <p data-i18n="gymDesc">Web app pensata per l'uso diretto in palestra. Gestione clienti, monitoraggio progressi e
                             schede di allenamento interattive a portata di smartphone.</p>
                         <a href="https://mypersonalgym-97a3b.web.app/dashboard" target="_blank"
-                            rel="noopener noreferrer" class="project-btn">Visita la Web App</a>
+                            rel="noopener noreferrer" class="project-btn" data-i18n="visitWebApp">Visita la Web App</a>
                     </div>
                 </div>
 
@@ -229,7 +233,7 @@
                         <button class="slider-btn next">&#10095;</button>
                     </div>
                     <div class="project-card-content">
-                        <h3>Bella Napoli Premium</h3>
+                        <h3 data-i18n="bellaNapoli">Bella Napoli Premium</h3>
                         <div class="project-tags">
                             <span class="tag">React 18</span>
                             <span class="tag">Vite</span>
@@ -237,10 +241,10 @@
                             <span class="tag">Framer Motion</span>
                             <span class="tag">Netlify</span>
                         </div>
-                        <p>Piattaforma avanzata per la gestione degli ordini e menù digitale interattivo. Un'esperienza
+                        <p data-i18n="bellaNapoliDesc">Piattaforma avanzata per la gestione degli ordini e menù digitale interattivo. Un'esperienza
                             fluida e premium per i clienti della pizzeria.</p>
                         <a href="https://bellanapolipremium.netlify.app" target="_blank" rel="noopener noreferrer"
-                            class="project-btn">Visita il Sito</a>
+                            class="project-btn" data-i18n="visitSite">Visita il Sito</a>
                     </div>
                 </div>
 
@@ -257,16 +261,16 @@
                         <button class="slider-btn next">&#10095;</button>
                     </div>
                     <div class="project-card-content">
-                        <h3>SIS Modena — Carpenteria Metallica</h3>
+                        <h3 data-i18n="sisModena">SIS Modena — Carpenteria Metallica</h3>
                         <div class="project-tags">
                             <span class="tag">B2B</span>
                             <span class="tag">HTML · CSS · JS</span>
                             <span class="tag">Galleria Lavori</span>
                         </div>
-                        <p>Sito per carpenteria metallica B2B: galleria progetti reali, sezione
+                        <p data-i18n="sisModenaDesc">Sito per carpenteria metallica B2B: galleria progetti reali, sezione
                             certificazioni e form preventivo rapido per acquisire lead.</p>
                         <a href="https://sismodena.netlify.app/" target="_blank" rel="noopener noreferrer"
-                            class="project-btn">Visita il Sito</a>
+                            class="project-btn" data-i18n="visitSite">Visita il Sito</a>
                     </div>
                 </div>
 
@@ -279,19 +283,19 @@
                     <div class="about-stats">
                         <div class="stat-card">
                             <span class="stat-number">10+</span>
-                            <span class="stat-label">Tecnologie usate</span>
+                            <span class="stat-label" data-i18n="techUsed">Tecnologie usate</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-number">Full-Stack</span>
+                            <span class="stat-number" data-i18n="fullStack">Full-Stack</span>
                             <span class="stat-label">Developer</span>
                         </div>
                         <div class="stat-card">
                             <span class="stat-number">2025</span>
-                            <span class="stat-label">Laurea Triennale</span>
+                            <span class="stat-label" data-i18n="degree">Laurea Triennale</span>
                         </div>
                         <div class="stat-card">
                             <span class="stat-number">C1</span>
-                            <span class="stat-label">Inglese Fluente</span>
+                            <span class="stat-label" data-i18n="english">Inglese Fluente</span>
                         </div>
                     </div>
                 </div>
@@ -301,9 +305,9 @@
                         <div class="about-icon">
                             <i class="fa-solid fa-user-graduate"></i>
                         </div>
-                        <h2>Su di Me</h2>
+                        <h2 data-i18n="aboutMe">Su di Me</h2>
                     </div>
-                    <p class="about-intro">
+                    <p class="about-intro" data-i18n="aboutText">
                         Sono Lucia, <strong>sviluppatrice Full-Stack neolaureata</strong> in Informatica per le Aziende Digitali presso l'Università Telematica Pegaso.
                         <br><br>
                         La mia passione è creare applicazioni web moderne, scalabili e user-friendly. Sono autonoma nell'intero ciclo di sviluppo:
@@ -317,62 +321,62 @@
         </section>
 
         <section id="competenze" class="container" style="margin-top: 8rem; border-top: 1px solid #2a2a3e; padding-top: 5rem;">
-            <h2>Competenze Tecniche</h2>
+            <h2 data-i18n="skills">Competenze Tecniche</h2>
             <ul class="services-list">
                 <li>
-                    <h4>Frontend</h4>
-                    <p>React 18+, React Native, TypeScript, HTML5, CSS3, Tailwind CSS, Vite, Framer Motion</p>
+                    <h4 data-i18n="frontend">Frontend</h4>
+                    <p data-i18n="frontendSkills">React 18+, React Native, TypeScript, HTML5, CSS3, Tailwind CSS, Vite, Framer Motion</p>
                 </li>
                 <li>
-                    <h4>Backend & APIs</h4>
-                    <p>Node.js, Express.js, REST API, autenticazione e gestione sessioni</p>
+                    <h4 data-i18n="backend">Backend & APIs</h4>
+                    <p data-i18n="backendSkills">Node.js, Express.js, REST API, autenticazione e gestione sessioni</p>
                 </li>
                 <li>
-                    <h4>Database & Cloud</h4>
-                    <p>Firebase (Firestore, Authentication, Storage), Supabase, SQL, GitHub Pages, Netlify</p>
+                    <h4 data-i18n="database">Database & Cloud</h4>
+                    <p data-i18n="databaseSkills">Firebase (Firestore, Authentication, Storage), Supabase, SQL, GitHub Pages, Netlify</p>
                 </li>
                 <li>
-                    <h4>Tools & Metodologie</h4>
-                    <p>VS Code, Responsive Design, SEO, PWA, AI & Prompt Engineering</p>
+                    <h4 data-i18n="tools">Tools & Metodologie</h4>
+                    <p data-i18n="toolsSkills">VS Code, Responsive Design, SEO, PWA, AI & Prompt Engineering</p>
                 </li>
                 <li>
-                    <h4>Lingue</h4>
-                    <p>Italiano (madrelingua) · Inglese (C1 — livello avanzato)</p>
+                    <h4 data-i18n="languages">Lingue</h4>
+                    <p data-i18n="languagesSkills">Italiano (madrelingua) · Inglese (C1 — livello avanzato)</p>
                 </li>
             </ul>
         </section>
 
         <section id="faq" class="container" style="margin-top: 8rem; border-top: 1px solid #2a2a3e; padding-top: 5rem;">
-            <h2>Domande Frequenti</h2>
-            <p class="faq-intro">Domande che potrebbero interessare chi mi sta valutando per un ruolo.</p>
+            <h2 data-i18n="faqTitle">Domande Frequenti</h2>
+            <p class="faq-intro" data-i18n="faqIntro">Domande che potrebbero interessare chi mi sta valutando per un ruolo.</p>
             <div class="faq-list">
                 <details>
-                    <summary>Qual è il tuo background formativo?</summary>
-                    <p>Mi sono laureata nel <strong>Ottobre 2025</strong> in <strong>Informatica per le Aziende Digitali</strong> 
+                    <summary data-i18n="q1">Qual è il tuo background formativo?</summary>
+                    <p data-i18n="a1">Mi sono laureata nel <strong>Ottobre 2025</strong> in <strong>Informatica per le Aziende Digitali</strong> 
                     presso l'Università Telematica Pegaso. Durante il corso ho affrontato algoritmi, basi di dati, ingegneria del software 
                     e sviluppo web full-stack. Ho realizzato numerosi progetti end-to-end con React, Node.js, Firebase e Supabase.</p>
                 </details>
                 <details>
-                    <summary>Quali sono le tue tecnologie preferite?</summary>
-                    <p>Sono specializzata in <strong>React.js</strong> per il frontend (con TypeScript), <strong>Node.js/Express</strong> per il backend, 
+                    <summary data-i18n="q2">Quali sono le tue tecnologie preferite?</summary>
+                    <p data-i18n="a2">Sono specializzata in <strong>React.js</strong> per il frontend (con TypeScript), <strong>Node.js/Express</strong> per il backend, 
                     <strong>Firebase</strong> e <strong>Supabase</strong> per database e cloud. Utilizzo <strong>Tailwind CSS</strong> per lo styling 
                     moderno e <strong>Vite</strong> come build tool. Attualmente sto sviluppando anche app per mobile in <strong>React Native</strong>.</p>
                 </details>
                 <details>
-                    <summary>Lavori in team o preferisci autonomamente?</summary>
-                    <p>Mi piace entrambi! Sono autonoma nell'intero ciclo di sviluppo (da zero al deploy), ma lavoro benissimo in team. 
+                    <summary data-i18n="q3">Lavori in team o preferisci autonomamente?</summary>
+                    <p data-i18n="a3">Mi piace entrambi! Sono autonoma nell'intero ciclo di sviluppo (da zero al deploy), ma lavoro benissimo in team. 
                     Comunico fluidamente in <strong>Inglese (C1)</strong>, uso Git per la collaborazione e seguo best practice di codice pulito 
                     e documentazione. Apprezzo il feedback e imparo velocemente dalle esperienze condivise.</p>
                 </details>
                 <details>
-                    <summary>Quali sono i tuoi punti di forza come sviluppatrice?</summary>
-                    <p>Attenzione alla <strong>qualità del codice</strong>, problem-solving creativo, <strong>responsabilità</strong> e voglia di imparare. 
+                    <summary data-i18n="q4">Quali sono i tuoi punti di forza come sviluppatrice?</summary>
+                    <p data-i18n="a4">Attenzione alla <strong>qualità del codice</strong>, problem-solving creativo, <strong>responsabilità</strong> e voglia di imparare. 
                     Creo applicazioni scalabili e mantenibili, mi preoccupo della <strong>user experience</strong> oltre che della logica backend, 
                     e sono proattiva nel cercare soluzioni ottimali. Apprezzo la semplicità nel codice e la documentazione chiara.</p>
                 </details>
                 <details>
-                    <summary>Hai esperienza con deployment e DevOps?</summary>
-                    <p>Sì! Ho deployato progetti su <strong>Netlify</strong>, <strong>Firebase Hosting</strong>, <strong>GitHub Pages</strong> e <strong>Expo</strong> per React Native. 
+                    <summary data-i18n="q5">Hai esperienza con deployment e DevOps?</summary>
+                    <p data-i18n="a5">Sì! Ho deployato progetti su <strong>Netlify</strong>, <strong>Firebase Hosting</strong>, <strong>GitHub Pages</strong> e <strong>Expo</strong> per React Native. 
                     Ho familiarità con <strong>GitHub Actions</strong> per CI/CD, gestione delle variabili d'ambiente e ottimizzazione per la produzione. 
                     Continuo a migliorare in questo ambito perché lo trovo affascinante.</p>
                 </details>
@@ -380,15 +384,15 @@
         </section>
 
         <section id="formazione" class="container" style="margin-top: 8rem; margin-bottom: 10rem; border-top: 1px solid #2a2a3e; padding-top: 5rem;">
-            <h2>Formazione & Certificazioni</h2>
+            <h2 data-i18n="education">Formazione & Certificazioni</h2>
             <div class="blog-grid">
                 <article class="blog-card">
-                    <h3>Laurea Triennale in Informatica per le Aziende Digitali</h3>
-                    <p><strong>Università Telematica Pegaso</strong> · Ottobre 2025</p>
+                    <h3 data-i18n="degreeName">Laurea Triennale in Informatica per le Aziende Digitali</h3>
+                    <p><strong data-i18n="university">Università Telematica Pegaso</strong> · <span data-i18n="graduationDate">Ottobre 2025</span></p>
                 </article>
                 <article class="blog-card">
-                    <h3>AI Skills 4 Women</h3>
-                    <p><strong>Microsoft & Founderz</strong> · In Corso (Aprile 2026)</p>
+                    <h3 data-i18n="aiSkills">AI Skills 4 Women</h3>
+                    <p><strong data-i18n="aiPartners">Microsoft & Founderz</strong> · <span data-i18n="aiStatus">In Corso (Aprile 2026)</span></p>
                 </article>
             </div>
         </section>

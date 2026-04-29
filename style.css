@@ -40,6 +40,40 @@ header nav { display: flex; justify-content: space-between; align-items: center;
 header ul { display: flex; gap: 2rem; }
 header ul a { transition: color 0.3s ease; }
 header ul a:hover { color: var(--accent-color); }
+.language-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 0.8rem;
+    background-color: rgba(74, 105, 255, 0.12);
+    border: 1px solid rgba(74, 105, 255, 0.3);
+    border-radius: 6px;
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.05em;
+}
+.language-toggle:hover {
+    background-color: rgba(74, 105, 255, 0.25);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(74, 105, 255, 0.3);
+}
+.language-toggle:active {
+    transform: scale(0.95);
+}
+.language-toggle .lang-badge {
+    display: inline-block;
+}
+@media (max-width: 768px) {
+    .language-toggle {
+        height: 36px;
+        padding: 0 0.6rem;
+        font-size: 0.8rem;
+    }
+}
 .nav-cta { font-weight: 600; background-color: var(--accent-color); color: white; padding: 0.5rem 1rem; border-radius: 5px; transition: all 0.3s ease; }
 .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(74, 105, 255, 0.4); }
 .nav-toggle {
