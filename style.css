@@ -158,6 +158,14 @@ header ul a:hover { color: var(--accent-color); }
     flex-direction: column;
 }
 .project-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+.featured-project { grid-column: 1 / -1; flex-direction: row; border-color: rgba(74, 105, 255, 0.6); background: linear-gradient(135deg, #1a1a2e, #10182f); }
+.featured-project .project-card-content { padding: 2.25rem; text-align: left; justify-content: center; }
+.project-eyebrow { color: var(--accent-color); font-size: 0.78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .4rem; }
+.project-contribution { font-size: .92rem; margin-top: .5rem; }
+.project-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: auto; padding-top: 1rem; }
+.project-links .project-btn { margin-top: 0; }
+.celiachio-preview { min-height: 440px; flex: 0 0 38%; display: grid; place-items: center; overflow: hidden; padding: 1.5rem; background: radial-gradient(circle at 28% 20%, #4b8fff 0, transparent 42%), linear-gradient(160deg, #0b59c8, #006df4 65%, #1549a3); }
+.celiachio-preview img { display: block; width: auto; max-width: 100%; height: 410px; object-fit: contain; border: 7px solid #15151a; border-radius: 30px; box-shadow: 0 12px 35px rgba(0,0,0,.4); }
 .slider-container { position: relative; height: 400px; background-color: #000; overflow: hidden; }
 .slider-container .slide { display: none; width: 100%; height: 100%; padding: 10px; }
 .slider-container .slide.active { display: block; }
@@ -367,6 +375,11 @@ body.blog-page { background-color: var(--bg-color); }
 
     .services-list { grid-template-columns: 1fr; }
     .method-grid, .blog-grid { grid-template-columns: 1fr; }
+    .featured-project { flex-direction: column; }
+    .featured-project .project-card-content { text-align: center; }
+    .celiachio-preview { width: 100%; flex-basis: auto; min-height: 360px; }
+    .celiachio-preview img { height: 330px; width: 230px; }
+    .project-links { justify-content: center; }
     #metodo, #blog { padding: 3rem 1rem; }
 
     .footer-content { flex-direction: column; align-items: center; text-align: center; }

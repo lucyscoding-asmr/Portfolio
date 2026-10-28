@@ -8,9 +8,9 @@ const translations = {
         faq: 'FAQ',
 
         // HERO
-        location: 'Full-Stack Developer · Modena, Italia',
-        heroTitle: 'Ciao, sono Lucia<br>Sviluppatrice Full-Stack neolaureata.',
-        heroDesc: 'Creo <strong>web app moderne</strong> e <strong>siti web strategici</strong> con React, TypeScript, Node.js e Firebase. <br><br>Qui troverai i miei progetti personali, le competenze tecniche e come posso contribuire al tuo team.',
+        location: 'Full-Stack & Mobile Developer · Modena, Italia',
+        heroTitle: 'Ciao, sono Lucia<br>Full-Stack & Mobile Developer.',
+        heroDesc: 'Sviluppo <strong>prodotti web e mobile</strong> curati, affidabili e pensati per le persone, con React, React Native e TypeScript. <br><br>Scopri i progetti con cui trasformo idee in esperienze digitali concrete.',
         explorProjects: 'Esplora i Miei Progetti',
 
         // APPROCCIO SECTION
@@ -29,6 +29,12 @@ const translations = {
         visitSite: 'Visita il Sito',
         visitWebApp: 'Visita la Web App',
         thesis: 'Progetto di Tesi',
+        featuredProject: 'Progetto in evidenza · Mobile App',
+        celiachioTitle: 'CeliachIO',
+        celiachioDesc: 'Applicazione mobile sviluppata end-to-end e pubblicata su App Store e Google Play. Include scansione barcode, ricerca e verifica degli alimenti, analisi ingredienti, cronologia, preferiti e lista della spesa.',
+        celiachioContribution: '<strong>Il mio contributo:</strong> sviluppo, integrazione funzionalità, testing e processo di pubblicazione.',
+        appStore: 'App Store',
+        googlePlay: 'Google Play',
         ferrariHub: 'Ferrari Sustainability Hub',
         ferrariDesc: 'Piattaforma web per la consultazione e il download dei report ufficiali di sostenibilità di Ferrari. Progetto realizzato come tesi di laurea con focus su accessibilità e user experience.',
         fitnessManager: 'Fitness Studio Manager',
@@ -93,9 +99,9 @@ const translations = {
         faq: 'FAQ',
 
         // HERO
-        location: 'Full-Stack Developer · Modena, Italy',
-        heroTitle: 'Hi, I\'m Lucia<br>A newly graduated Full-Stack Developer.',
-        heroDesc: 'I build <strong>modern web apps</strong> and <strong>strategic websites</strong> with React, TypeScript, Node.js and Firebase. <br><br>Here you\'ll find my personal projects, technical skills and how I can contribute to your team.',
+        location: 'Full-Stack & Mobile Developer · Modena, Italy',
+        heroTitle: 'Hi, I\'m Lucia<br>Full-Stack & Mobile Developer.',
+        heroDesc: 'I build <strong>thoughtful, reliable web and mobile products</strong> with React, React Native and TypeScript. <br><br>Explore the projects where I turn ideas into tangible digital experiences.',
         explorProjects: 'Explore My Projects',
 
         // APPROCCIO SECTION
@@ -114,6 +120,12 @@ const translations = {
         visitSite: 'View Live Site',
         visitWebApp: 'View Live Web App',
         thesis: 'Thesis Project',
+        featuredProject: 'Featured project · Mobile App',
+        celiachioTitle: 'CeliachIO',
+        celiachioDesc: 'An end-to-end mobile app published on the App Store and Google Play. It includes barcode scanning, food search and verification, ingredient analysis, history, favourites and a shopping list.',
+        celiachioContribution: '<strong>My contribution:</strong> development, feature integration, testing and the release process.',
+        appStore: 'App Store',
+        googlePlay: 'Google Play',
         ferrariHub: 'Ferrari Sustainability Hub',
         ferrariDesc: 'Web platform for consulting and downloading Ferrari\'s official sustainability reports. A thesis project focused on accessibility and user experience.',
         fitnessManager: 'Fitness Studio Manager',
